@@ -31,8 +31,6 @@ Built using :
 
 ## dSYM Support
 
-For App Store submissions requiring dSYM files:
-```bash
-./extract_dsyms.sh [version]
-```
-This will download the XCFramework and extract any embedded dSYMs for crash report symbolication. 
+⚠️ **Note**: Current releases do not include dSYMs. For App Store submissions:
+- See [BUILD_CONFIG.md](BUILD_CONFIG.md) for workarounds and build instructions
+- Request dSYM support at: https://github.com/livekit/webrtc-xcframework/issues 
