@@ -27,4 +27,12 @@ Built using :
 | **visionOS (device)**    |   ✅   |     　   | 
 | **visionOS (simulator)** |   ✅   |         | 
 | **tvOS (device)**        |   ✅   |     　   | 
-| **tvOS (simulator)**     |   ✅   |         | 
+| **tvOS (simulator)**     |   ✅   |         |
+
+## dSYM Support
+
+For App Store submissions requiring dSYM files:
+```bash
+./extract_dsyms.sh [version]
+```
+This will download the XCFramework and extract any embedded dSYMs for crash report symbolication. 
