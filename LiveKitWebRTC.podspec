@@ -21,6 +21,9 @@ Pod::Spec.new do |spec|
     :http => "https://github.com/livekit/webrtc-xcframework/releases/download/137.7151.03/LiveKitWebRTC.xcframework.zip"
   }
   spec.vendored_frameworks = "LiveKitWebRTC.xcframework"
+  
+  # Preserve dSYM files for App Store submissions
+  spec.preserve_paths = "LiveKitWebRTC.xcframework/**/*.dSYM"
 
   # Exclude architectures for specific platforms
   spec.pod_target_xcconfig = {
